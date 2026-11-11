@@ -1,11 +1,11 @@
 {
 	"name": "n8n-nodes-morphedra",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n community node for the Morphedra Whiteboard Video API: turn scientific figures into narrated whiteboard videos.",
 	"license": "MIT",
-        "publishConfig": {
-                "access": "public"
-        },
+	"publishConfig": {
+		"access": "public"
+	},
 	"homepage": "https://github.com/sabbrands/n8n-nodes-morphedra#readme",
 	"keywords": [
 		"n8n-community-node-package",
