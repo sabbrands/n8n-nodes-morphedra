@@ -1,0 +1,57 @@
+{
+	"name": "n8n-nodes-morphedra",
+	"version": "0.1.0",
+	"description": "n8n community node for the Morphedra Whiteboard Video API: turn scientific figures into narrated whiteboard videos.",
+	"license": "MIT",
+	"homepage": "https://github.com/sabbrands/n8n-nodes-morphedra#readme",
+	"keywords": [
+		"n8n-community-node-package",
+		"morphedra",
+		"whiteboard video",
+		"scientific figures"
+	],
+	"author": {
+		"name": "Morphedra",
+		"email": "support@morphedra.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sabbrands/n8n-nodes-morphedra.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sabbrands/n8n-nodes-morphedra/issues"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/MorphedraApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Morphedra/Morphedra.node.js",
+			"dist/nodes/MorphedraTrigger/MorphedraTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
