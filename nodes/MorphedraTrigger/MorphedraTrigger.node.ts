@@ -19,7 +19,7 @@ export class MorphedraTrigger implements INodeType {
 		icon: { light: 'file:../Morphedra/morphedra.svg', dark: 'file:../Morphedra/morphedra.dark.svg' },
 		group: ['trigger'],
 		version: [1],
-		description: 'Starts the workflow when a Morphedra video is finished',
+		description: 'Starts the workflow when a Morphedra video is finished. It checks your videos at the poll interval you set and needs no public address or webhook secret.',
 		subtitle: '={{$parameter["event"]}}',
 		defaults: {
 			name: 'Morphedra Trigger',
@@ -34,13 +34,7 @@ export class MorphedraTrigger implements INodeType {
 			},
 		],
 		properties: [
-			{
-				displayName:
-					'This trigger checks your Morphedra videos at the poll interval you set below. It needs no public address and no webhook secret. Videos that are still running are picked up when they finish.',
-				name: 'triggerNotice',
-				type: 'notice',
-				default: '',
-			},
+			
 			{
 				displayName: 'Event',
 				name: 'event',

@@ -39,14 +39,7 @@ export const videoOperations: INodeProperties[] = [
 
 export const videoFields: INodeProperties[] = [
 	// ----- Create -----
-	{
-		displayName:
-			'You pay $1.80 per minute of finished video, billed per second. The most you can be charged is set by "Max Duration (Seconds)" (default 60). Test keys make free watermarked videos of up to 15 seconds.',
-		name: 'createNotice',
-		type: 'notice',
-		default: '',
-		displayOptions: { show: { resource: ['video'], operation: ['create'] } },
-	},
+	
 	{
 		displayName: 'Specify Figures',
 		name: 'figuresInput',
